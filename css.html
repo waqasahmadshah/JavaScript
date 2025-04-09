@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Example</title>
+    <style>
+        /* Define the keyframes for the animation */
+        @keyframes moveRight {
+            0% {
+                transform: translateX(0);
+                background-color: red;
+            }
+            50% {
+                transform: translateX(200px);
+                background-color: yellow;
+            }
+            100% {
+                transform: translateX(0);
+                background-color: red;
+            }
+        }
+
+        /* Style for the animated box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: moveRight; /* Name of the keyframes */
+            animation-duration: 4s; /* Duration of the animation */
+            animation-timing-function: ease-in-out; /* Timing function */
+            animation-iteration-count: infinite; /* Repeat indefinitely */
+            animation-direction: alternate; /* Alternate direction on each iteration */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
